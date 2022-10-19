@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #150050;
+    background-color: #1E2022;
 }
 
 header {
@@ -13,6 +13,15 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+header h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #f2f2f2;
+}
+
+header h1 {
+    font-size: 3rem;
 }
 
 .siteWrapper {
@@ -25,9 +34,29 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .imgContainer img {
     max-width: 750px;
-    
+    object-fit: cover;
+}
+
+.imgWrapper {
+    box-shadow: 0 3px 10px rgba(249, 249, 249, 0.421);
+}
+
+.explanation {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+    color: #f2f2f2;
+}
+
+.explanation p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
