@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #150050;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.siteWrapper {
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer img {
+    max-width: 750px;
+    
+}
