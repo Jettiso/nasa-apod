@@ -20,43 +20,121 @@ header h1, h2, h3 {
     color: #f2f2f2;
 }
 
-header h1 {
-    font-size: 3rem;
-}
 
 .siteWrapper {
-    margin: 0 auto;
-    width: 1200px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 1rem;
+    width: 100%;
 }
 
 .imgContainer {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.imgContainer img {
-    max-width: 750px;
-    object-fit: cover;
+    height: calc(100vh - 100px);
+    width: 100%;
+    padding: 3rem;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .imgWrapper {
-    box-shadow: 0 3px 10px rgba(249, 249, 249, 0.421);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
 }
 
-.explanation {
-    margin: 0 auto;
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.dateBox {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 750px;
+}
+
+.imgContainer h1 {
     color: #f2f2f2;
 }
 
+.explanation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: #f2f2f2;
+    padding: 2rem;
+    /* visibility: hidden; */
+    z-index: 30;
+}
+
 .explanation p {
-    margin: 0 auto;
+    color: #1f1f1f;
+    margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.explanation button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+    align-self: center;
+    justify-self: center;
+}
+
+.transparentBg {
+    position: fixed;
+}
+
+.dateBox input[type ="date"] {
+    background-color: #5050c7;
+    color: white;
+    padding: 1rem;
+    margin-right: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
+}
+
+.siteWrapper h3 {
+    margin-bottom: 1.5rem;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dateBox button {
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:  #6464f0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-size: 1rem;
 }
