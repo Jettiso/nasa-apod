@@ -78,7 +78,20 @@ body {
 }
 
 .imgContainer .title {
-    color: #f2f2f2;
+    background: #fc5c7d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #6a82fb,
+        #fc5c7d
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #6a82fb,
+        #fc5c7d
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
     margin: 0 auto;
     text-align: center;
@@ -139,17 +152,9 @@ body {
     pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .preloader {
-        animation: preloader-spin infinite 20s linear;
-    }
-}
-
-@keyframes preloader-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
+@media screen and (max-width: 450px) {
+    .explanation {
+        overflow: scroll;
+        max-height: 75vh;
     }
 }
